@@ -7,13 +7,24 @@ jpq.quotes = [
 	"Gee, the lack of humility before nature that's being displayed here, uh... staggers me.",
 	"Find Nedry! Check the vending machines!",
 	"We spared no expense.",
-	"Dodgson, Dodgson, we've got Dodgson here! Nobody cares.",
+	"Dodgson, Dodgson, we've got Dodgson here! See nobody cares.",
 	"It's a UNIX system! I know this!",
 	"Look... We can discuss sexism in survival situations when I get back.",
 	"I am not a computer nerd. I prefer to be called a hacker!",
 	"Clever girl",
 	"Dino DNA",
-	"Hello, John"
+	"Hello, John",
+	"Yeah, but, John, if The Pirates of the Caribbean breaks down, the pirates don't eat the tourists.",
+	"God creates dinosaurs. God destroys dinosaurs. God creates man. Man destroys God. Man creates dinosaurs.",
+	"That doesn't look very scary. More like a six-foot turkey.",
+	"What have they got in there, King Kong?",
+	"Dr. Grant, my dear Dr. Sattler...Welcome to Jurassic Park.",
+	"Well... we're back... in the car again.",
+	"That is one big pile of shit.",
+	"Remind me to thank John for a lovely weekend.",
+	"We're gonna make a fortune with this place.",
+	"I hate trees!",
+	"You will remember to wash your hands before you eat anything?"
 ];
 
 //Function that loads first quote on page load
