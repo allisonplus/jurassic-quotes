@@ -45,17 +45,23 @@ h1.title {
 /////////////////// M A I N ///////////////////
 //////////////////////////////////////////////
 
-div.quote {
+div.quote-box {
 	text-align: center;
 	&:before {
 		content: '"';
 		display: block;
-		font-size: 10rem;
+		font-size: 2rem;
 	}
 	&:after {
 		content: '"';
 		display: block;
+		font-size: 2rem;
+		margin-top: 10px;
 	}
+}
+
+div.quote {
+	text-align: center;
 }
 
 div.dino-head {
