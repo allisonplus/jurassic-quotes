@@ -23,6 +23,10 @@ a {
 	}
 }
 
+.wrapper {
+	margin: 0 auto;
+}
+
 .inner-wrapper {
 	width: 80%;
 	margin: 0 auto;
@@ -34,8 +38,35 @@ a {
 ///////////////// H E A D E R /////////////////
 //////////////////////////////////////////////
 
+h1.title {
+	text-align: center;
+}
+
 /////////////////// M A I N ///////////////////
 //////////////////////////////////////////////
+
+div.quote {
+	text-align: center;
+	&:before {
+		content: '"';
+		display: block;
+		font-size: 10rem;
+	}
+	&:after {
+		content: '"';
+		display: block;
+	}
+}
+
+div.dino-head {
+	margin: 20px auto 0 auto;
+	width: 10%;
+	svg {
+		display: inline-block;
+		// width: 100%;
+	}
+}
+
 
 ///////////////// F O O T E R /////////////////
 //////////////////////////////////////////////
