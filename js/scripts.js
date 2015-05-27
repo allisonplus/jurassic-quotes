@@ -27,6 +27,8 @@ jpq.quotes = [
 	"You will remember to wash your hands before you eat anything?",
 	"I really hate that man.",
 	"You did it. You crazy son of a bitch, you did it.",
+	"But again, how do you know they're all female? Does somebody go out into the park and pull up the dinosaurs' skirts?",
+	"What's the matter, kid? You never had lamb chops?",
 	
 ];
 

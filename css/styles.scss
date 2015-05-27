@@ -82,24 +82,27 @@ div.quote-box {
 		content: '"';
 		float: left;
 		font-size: 2rem;
+		position: relative;
 	}
 	&:after {
 		content: '"';
 		float: right;
 		font-size: 2rem;
+		position: relative;
+		top: -12px;
 	}
 }
 
 div.quote {
 	text-align: center;
+	font-size: 1.4rem;
 }
 
 div.dino-head {
 	margin: 20px auto 0 auto;
 	width: 10%;
 	svg {
-		display: inline-block;
-		// width: 100%;
+		width: 80%;
 	}
 }
 
