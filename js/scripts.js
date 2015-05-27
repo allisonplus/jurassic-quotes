@@ -24,7 +24,10 @@ jpq.quotes = [
 	"Remind me to thank John for a lovely weekend.",
 	"We're gonna make a fortune with this place.",
 	"I hate trees!",
-	"You will remember to wash your hands before you eat anything?"
+	"You will remember to wash your hands before you eat anything?",
+	"I really hate that man.",
+	"You did it. You crazy son of a bitch, you did it.",
+	
 ];
 
 //Function that loads first quote on page load
@@ -45,4 +48,13 @@ $(function() {
 		});
 	});
 });
+
+// RANDOMIZE IMAGES
+var images = ['jpq-01.jpg', 'jpq-02.jpg', 'jpq-03.jpg'];
+$('<img src="img/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#easter-egg');
+
+// FADE IN/OUT ON CLICK
+$('a.hidden').on('click', function() {
+	$('#easter-egg').fadeIn(700).fadeToggle(1400);
+}); // END ON CLICK
 
