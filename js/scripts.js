@@ -29,12 +29,12 @@ jpq.quotes = [
 	"You did it. You crazy son of a bitch, you did it.",
 	"But again, how do you know they're all female? Does somebody go out into the park and pull up the dinosaurs' skirts?",
 	"What's the matter, kid? You never had lamb chops?",
-	
+
 ];
 
 //Function that loads first quote on page load
 $(document).ready(function() {
-	$("#quote").html(jpq.quotes[jpq.random()]);
+	$("#quote").html('<span class="quote">"</span>' + jpq.quotes[jpq.random()] + '<span class="quote">"</span>');
 }); //END DOCUMENT READY
 
 //Randomize quote picker
@@ -46,7 +46,7 @@ jpq.random = function() {
 $(function() {
 	$(".button").on('click', function() {
 		$("#quote").fadeOut(function() {
-			$("#quote").fadeIn().html(jpq.quotes[jpq.random()]);
+			$("#quote").fadeIn().html('<span class="quote">"</span>' + jpq.quotes[jpq.random()] + '<span class="quote">"</span>');
 		});
 	});
 });
@@ -57,6 +57,6 @@ $('<img src="img/' + images[Math.floor(Math.random() * images.length)] + '">').a
 
 // FADE IN/OUT ON CLICK
 $('a.hidden').on('click', function() {
-	$('#easter-egg').fadeIn(700).fadeToggle(1400);
+	$('#easter-egg').fadeIn(500).fadeToggle(300);
 }); // END ON CLICK
 

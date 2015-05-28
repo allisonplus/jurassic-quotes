@@ -44,6 +44,10 @@ a {
 
 h1.title {
 	text-align: center;
+	// text-transform: uppercase;
+	letter-spacing: 5px;
+	font-family: 'tribecaregular';
+	font-size: 5rem;
 }
 
 /////////////////// M A I N ///////////////////
@@ -76,33 +80,49 @@ a.hidden {
 	cursor: default;
 }
 
-div.quote-box {
-	text-align: center;
-	&:before {
-		content: '"';
-		float: left;
-		font-size: 2rem;
-		position: relative;
-	}
-	&:after {
-		content: '"';
-		float: right;
-		font-size: 2rem;
-		position: relative;
-		top: -12px;
-	}
+// div.quote-box {
+// 	text-align: center;
+// 	&:before {
+// 		content: '"';
+// 		float: left;
+// 		font-size: 2rem;
+// 		position: relative;
+// 	}
+// 	&:after {
+// 		content: '"';
+// 		float: right;
+// 		font-size: 2rem;
+// 		position: relative;
+// 		top: -12px;
+// 	}
+// }
+
+span.quote {
+	font-size: 3rem;
+	margin: 0 10px;
 }
 
 div.quote {
 	text-align: center;
 	font-size: 1.4rem;
+	line-height: 1.5;
+	width: 80%;
+	margin: 0 auto;
 }
 
 div.dino-head {
 	margin: 20px auto 0 auto;
+	text-align: center;
 	width: 10%;
 	svg {
-		width: 80%;
+		width: 100px;
+		margin: 0 auto;
+		transition: all and 0.5s ease-in-out;
+		&:hover {
+			transform: rotateZ(10deg);
+			fill: red;
+			opacity: 0.1;
+		}
 	}
 }
 
