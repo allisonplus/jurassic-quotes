@@ -110,21 +110,34 @@ div.quote {
 	margin: 0 auto;
 }
 
+svg.dino-1, .dino-2, .dino-3 {
+	width: 100px;
+	position: absolute;
+	transition: all and 0.5s ease-in-out;
+}
+
 div.dino-head {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 	margin: 20px auto 0 auto;
-	text-align: center;
 	width: 10%;
-	svg {
-		width: 100px;
-		margin: 0 auto;
-		transition: all and 0.5s ease-in-out;
-		&:hover {
-			transform: rotateZ(10deg);
-			fill: red;
-			opacity: 0.1;
-		}
+	&:hover .dino-1 {
+		z-index: 1;
+		fill: rgba(200, 0, 23, 1);
+		transform: rotate(10deg);
+	}
+	&:hover .dino-2 {
+		transform: rotate(0deg);
+		z-index: 2;
+	}
+	&:hover .dino-3 {
+		fill: rgba(226, 176, 69, 1);
+		transform: rotate(-10deg);
+		z-index: 3;
 	}
 }
+
 
 
 ///////////////// F O O T E R /////////////////
