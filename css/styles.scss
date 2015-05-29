@@ -112,23 +112,6 @@ a.hidden {
 	cursor: default;
 }
 
-// div.quote-box {
-// 	text-align: center;
-// 	&:before {
-// 		content: '"';
-// 		float: left;
-// 		font-size: 2rem;
-// 		position: relative;
-// 	}
-// 	&:after {
-// 		content: '"';
-// 		float: right;
-// 		font-size: 2rem;
-// 		position: relative;
-// 		top: -12px;
-// 	}
-// }
-
 span.quote {
 	font-size: 3rem;
 	margin: 0 10px;
@@ -151,21 +134,22 @@ div.dino-head {
 		width: 100%;
 		min-width: 75px;
 		position: absolute;
-		transition: all and 0.6s ease-in-out;
+		transition: all and 0.4s ease-in-out;
 		fill: $text;
 	}
 	&:hover .dino-1 {
-		transform: rotateZ(15deg);
+		// transform: rotateZ(15deg);
+		transform: translateX(-10px);
 		fill: rgba(226, 176, 69, 1.0);
 		z-index: 1;
 	}
 	&:hover .dino-2 {
 		transform: rotate(0deg);
-		opacity: 0.8;
 		z-index: 2;
 	}
 	&:hover .dino-3 {
-		transform: rotateZ(-15deg);
+		// transform: rotateZ(-15deg);
+		transform: translateX(10px);
 		fill: rgba(200, 0, 23, 1.0);
 		z-index: 2;
 	}

@@ -1,7 +1,7 @@
 var jpq = {};
 
 jpq.quotes = [
-	"When you gotta go, you gotta go",
+	"When you gotta go, you gotta go.",
 	"Hold onto your butts.",
 	"God help us, we're in the hands of engineers.",
 	"Gee, the lack of humility before nature that's being displayed here, uh... staggers me.",
@@ -11,9 +11,9 @@ jpq.quotes = [
 	"It's a UNIX system! I know this!",
 	"Look... We can discuss sexism in survival situations when I get back.",
 	"I am not a computer nerd. I prefer to be called a hacker!",
-	"Clever girl",
-	"Dino DNA",
-	"Hello, John",
+	"Clever girl.",
+	"Mr. DNA! Where did you come from?",
+	"Hello, John.",
 	"Yeah, but, John, if The Pirates of the Caribbean breaks down, the pirates don't eat the tourists.",
 	"God creates dinosaurs. God destroys dinosaurs. God creates man. Man destroys God. Man creates dinosaurs.",
 	"That doesn't look very scary. More like a six-foot turkey.",
@@ -29,7 +29,8 @@ jpq.quotes = [
 	"You did it. You crazy son of a bitch, you did it.",
 	"But again, how do you know they're all female? Does somebody go out into the park and pull up the dinosaurs' skirts?",
 	"What's the matter, kid? You never had lamb chops?",
-
+	"We’ll have a coupon day or something.",
+	"Unless they figure out how to open doors."
 ];
 
 //Function that loads first quote on page load
