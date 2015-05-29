@@ -5,6 +5,10 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+
+$font: 'Old Standard TT', serif;
+$text: rgba(21, 21, 21, 1);
+
 //////////////// D E F A U L T ////////////////
 //////////////////////////////////////////////
 
@@ -14,6 +18,9 @@ html {
 
 body {
 	overflow: hidden;
+	background: rgba(237, 224, 206, 1);
+	color: $text;
+	font-family: $font;
 }
 
 img {
@@ -28,7 +35,7 @@ a {
 }
 
 .wrapper {
-	margin: 0 auto;
+	margin: 100px auto;
 }
 
 .inner-wrapper {
@@ -42,12 +49,36 @@ a {
 ///////////////// H E A D E R /////////////////
 //////////////////////////////////////////////
 
+header.top {
+	position: relative;
+	margin-bottom: 50px;
+	&:after {
+		content: "";
+		height: 2px;
+		width: 25px;
+		position: absolute;
+		z-index: 50;
+		top: 120px;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: $text;
+	}
+}
+
 h1.title {
 	text-align: center;
-	// text-transform: uppercase;
-	letter-spacing: 5px;
-	font-family: 'tribecaregular';
-	font-size: 5rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-family: $font;
+	font-size: 4rem;
+	margin: 10px 0;
+}
+
+h2.subtitle {
+	margin-bottom: 0;
+	font-size: 2rem;
+	text-align: center;
 }
 
 /////////////////// M A I N ///////////////////
@@ -74,9 +105,10 @@ a.hidden {
 	position: absolute;
 	color: transparent;
 	font-size: 2rem;
-	right: 20px;
-	bottom: 20px;
-	padding: 100px;
+	right: 0;
+	top: 0;
+	height: 100px;
+	width: 100px;
 	cursor: default;
 }
 
@@ -104,37 +136,38 @@ span.quote {
 
 div.quote {
 	text-align: center;
-	font-size: 1.4rem;
-	line-height: 1.5;
-	width: 80%;
-	margin: 0 auto;
+	font-size: 2.2rem;
+	line-height: 1.4;
+	margin: 0 auto 50px 0;
 }
 
-svg.dino-1, .dino-2, .dino-3 {
-	width: 100px;
-	position: absolute;
-	transition: all and 0.5s ease-in-out;
-}
+
 
 div.dino-head {
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
+	position: relative;
 	margin: 20px auto 0 auto;
-	width: 10%;
+	width: 7%;
+	svg.dino-1, .dino-2, .dino-3 {
+		width: 100%;
+		min-width: 75px;
+		position: absolute;
+		transition: all and 0.6s ease-in-out;
+		fill: $text;
+	}
 	&:hover .dino-1 {
+		transform: rotateZ(15deg);
+		fill: rgba(226, 176, 69, 1.0);
 		z-index: 1;
-		fill: rgba(200, 0, 23, 1);
-		transform: rotate(10deg);
 	}
 	&:hover .dino-2 {
 		transform: rotate(0deg);
+		opacity: 0.8;
 		z-index: 2;
 	}
 	&:hover .dino-3 {
-		fill: rgba(226, 176, 69, 1);
-		transform: rotate(-10deg);
-		z-index: 3;
+		transform: rotateZ(-15deg);
+		fill: rgba(200, 0, 23, 1.0);
+		z-index: 2;
 	}
 }
 
