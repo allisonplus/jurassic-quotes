@@ -17,7 +17,7 @@ html {
 }
 
 body {
-	overflow: hidden;
+	// overflow: hidden;
 	background: rgba(237, 224, 206, 1);
 	color: $text;
 	font-family: $font;
@@ -99,6 +99,7 @@ h2.subtitle {
 
 #easter-egg {
 	display: none;
+	overflow: hidden;
 }
 
 a.hidden {
@@ -133,6 +134,7 @@ div.dino-head {
 	svg.dino-1, .dino-2, .dino-3 {
 		width: 100%;
 		min-width: 75px;
+		max-width: 100px;
 		position: absolute;
 		transition: all and 0.4s ease-in-out;
 		fill: $text;
@@ -161,3 +163,14 @@ div.dino-head {
 //////////////////////////////////////////////
 
 
+footer.bottom {
+	margin-top: 220px;
+	p {
+		font-size: 1.2rem;
+		text-align: center;
+		a {
+			color: $text;
+			text-decoration: underline;
+		}
+	}
+}
