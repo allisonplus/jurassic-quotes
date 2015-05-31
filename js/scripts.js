@@ -16,6 +16,7 @@ jpq.quotes = [
 	"Hello, John.",
 	"Yeah, but, John, if The Pirates of the Caribbean breaks down, the pirates don't eat the tourists.",
 	"God creates dinosaurs. God destroys dinosaurs. God creates man. Man destroys God. Man creates dinosaurs.",
+	"Dinosaurs eat man. Woman inherits the earth...",
 	"That doesn't look very scary. More like a six-foot turkey.",
 	"What have they got in there, King Kong?",
 	"Dr. Grant, my dear Dr. Sattler...Welcome to Jurassic Park.",
@@ -30,7 +31,13 @@ jpq.quotes = [
 	"But again, how do you know they're all female? Does somebody go out into the park and pull up the dinosaurs' skirts?",
 	"What's the matter, kid? You never had lamb chops?",
 	"We’ll have a coupon day or something.",
-	"Unless they figure out how to open doors."
+	"Unless they figure out how to open doors.",
+	"Dennis, our lives are in your hands and you've got butter-fingers?",
+	"I hate being right all the time.",
+	"I'm always on the lookout for the future ex-Mrs. Malcolm.",
+	"Ah, now eventually you do plan to have dinosaurs on your, on your dinosaur tour, right?",
+	"You were meant to come down here and defend me against these characters, and the only one I've got on my side is the blood-sucking lawyer!",
+	"I bring scientists, you bring the rock star."
 ];
 
 //Function that loads first quote on page load
@@ -53,11 +60,22 @@ $(function() {
 });
 
 // RANDOMIZE IMAGES
-var images = ['jpq-01.jpg', 'jpq-02.jpg', 'jpq-03.jpg'];
-$('<img src="img/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('#easter-egg');
+jpq.images = ['jpq-01.jpg', 'jpq-02.jpg', 'jpq-03.jpg'];
+var number = jpq.images[Math.floor(jpq.images.length * Math.random())];
 
-// FADE IN/OUT ON CLICK
+jpq.number = function() {
+	return Math.floor(Math.random()*(jpq.images.length));
+}
+
+// Creation of Image Element within Easter-Egg ID
+window.onload=function(){
+	var imageCreation = document.createElement("img");
+	imageCreation.setAttribute('src', 'img/' + jpq.images[jpq.number()]);
+	document.getElementById("easter-egg").appendChild(imageCreation);
+}
+
+// FADE IN/OUT ON CLICK, switching image source randomly from array
 $('a.hidden').on('click', function() {
 	$('#easter-egg').fadeIn(500).fadeToggle(300);
-}); // END ON CLICK
-
+	$("#easter-egg img").attr('src', 'img/' + jpq.images[jpq.number()]);
+})
