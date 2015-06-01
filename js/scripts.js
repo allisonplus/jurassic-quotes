@@ -4,12 +4,12 @@ jpq.quotes = [
 	"When you gotta go, you gotta go.",
 	"Hold onto your butts.",
 	"God help us, we're in the hands of engineers.",
-	"Gee, the lack of humility before nature that's being displayed here, uh... staggers me.",
+	"Gee, the lack of humility before nature that's being displayed here, uh...staggers me.",
 	"Find Nedry! Check the vending machines!",
 	"We spared no expense.",
-	"Dodgson, Dodgson, we've got Dodgson here! See nobody cares.",
+	"Dodgson, Dodgson, we've got Dodgson here!",
 	"It's a UNIX system! I know this!",
-	"Look... We can discuss sexism in survival situations when I get back.",
+	"Look...we can discuss sexism in survival situations when I get back.",
 	"I am not a computer nerd. I prefer to be called a hacker!",
 	"Clever girl.",
 	"Mr. DNA! Where did you come from?",
@@ -20,7 +20,7 @@ jpq.quotes = [
 	"That doesn't look very scary. More like a six-foot turkey.",
 	"What have they got in there, King Kong?",
 	"Dr. Grant, my dear Dr. Sattler...Welcome to Jurassic Park.",
-	"Well... we're back... in the car again.",
+	"Well...we're back...in the car again.",
 	"That is one big pile of shit.",
 	"Remind me to thank John for a lovely weekend.",
 	"We're gonna make a fortune with this place.",
@@ -60,7 +60,7 @@ $(function() {
 });
 
 // RANDOMIZE IMAGES
-jpq.images = ['jpq-01.jpg', 'jpq-02.jpg', 'jpq-03.jpg'];
+jpq.images = ['jpq-01.jpg', 'jpq-02.jpg', 'jpq-03.jpg', 'jpq-04.jpg', 'jpq-05.jpg', 'jpq-06.jpg', 'jpq-07.jpg', 'jpq-08.jpg', 'jpq-09.jpg'];
 var number = jpq.images[Math.floor(jpq.images.length * Math.random())];
 
 jpq.number = function() {
@@ -76,6 +76,6 @@ window.onload=function(){
 
 // FADE IN/OUT ON CLICK, switching image source randomly from array
 $('a.hidden').on('click', function() {
-	$('#easter-egg').fadeIn(500).fadeToggle(300);
+	$('#easter-egg').fadeIn(300).fadeToggle(1000);
 	$("#easter-egg img").attr('src', 'img/' + jpq.images[jpq.number()]);
 })

@@ -115,7 +115,7 @@ a.hidden {
 
 span.quote {
 	font-size: 3rem;
-	margin: 0 10px;
+	margin: 0 5px;
 }
 
 div.quote {
@@ -130,17 +130,16 @@ div.quote {
 div.dino-head {
 	position: relative;
 	margin: 20px auto 0 auto;
-	width: 7%;
+	width: 100px;
 	svg.dino-1, .dino-2, .dino-3 {
 		width: 100%;
 		min-width: 75px;
-		max-width: 100px;
+		// max-width: 100px;
 		position: absolute;
 		transition: all and 0.4s ease-in-out;
 		fill: $text;
 	}
 	&:hover .dino-1 {
-		// transform: rotateZ(15deg);
 		transform: translateX(-10px);
 		fill: rgba(226, 176, 69, 1.0);
 		z-index: 1;
@@ -150,7 +149,6 @@ div.dino-head {
 		z-index: 2;
 	}
 	&:hover .dino-3 {
-		// transform: rotateZ(-15deg);
 		transform: translateX(10px);
 		fill: rgba(200, 0, 23, 1.0);
 		z-index: 2;
@@ -164,13 +162,17 @@ div.dino-head {
 
 
 footer.bottom {
-	margin-top: 220px;
+	margin-top: 200px;
 	p {
 		font-size: 1.2rem;
 		text-align: center;
 		a {
 			color: $text;
-			text-decoration: underline;
+			font-style: italic;
+			transition: all 0.5s ease-in;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 	}
 }
