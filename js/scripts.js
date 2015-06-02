@@ -18,8 +18,8 @@ jpq.quotes = [
 	"God creates dinosaurs. God destroys dinosaurs. God creates man. Man destroys God. Man creates dinosaurs.",
 	"Dinosaurs eat man. Woman inherits the earth...",
 	"That doesn't look very scary. More like a six-foot turkey.",
-	"What have they got in there, King Kong?",
-	"Dr. Grant, my dear Dr. Sattler...Welcome to Jurassic Park.",
+	"What have they got in there? King Kong?",
+	"Dr. Grant, my dear Dr. Sattler, welcome to Jurassic Park.",
 	"Well...we're back...in the car again.",
 	"That is one big pile of shit.",
 	"Remind me to thank John for a lovely weekend.",
@@ -76,6 +76,7 @@ window.onload=function(){
 
 // FADE IN/OUT ON CLICK, switching image source randomly from array
 $('a.hidden').on('click', function() {
-	$('#easter-egg').fadeIn(500).fadeToggle(1700);
+	// $('#easter-egg').fadeIn(500).fadeToggle(1700);
+	$('#easter-egg').toggleClass('show').delay(1500).fadeOut();
 	$("#easter-egg img").attr('src', 'img/' + jpq.images[jpq.number()]);
 })
