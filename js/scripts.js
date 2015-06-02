@@ -76,7 +76,9 @@ window.onload=function(){
 
 // FADE IN/OUT ON CLICK, switching image source randomly from array
 $('a.hidden').on('click', function() {
-	// $('#easter-egg').fadeIn(500).fadeToggle(1700);
-	$('#easter-egg').toggleClass('show').delay(1500).fadeOut();
+  $('#easter-egg').addClass('show').delay(1500).queue(function(next){
+       $(this).removeClass('show');
+       next();
+  });
 	$("#easter-egg img").attr('src', 'img/' + jpq.images[jpq.number()]);
 })
