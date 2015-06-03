@@ -35,7 +35,7 @@ a {
 }
 
 .wrapper {
-	margin: 100px auto;
+	margin: 80px auto 0 auto;
 }
 
 .inner-wrapper {
@@ -100,7 +100,6 @@ h2.subtitle {
 }
 
 #easter-egg {
-	// display: none;
 	overflow: hidden;
 }
 
@@ -163,6 +162,14 @@ div.dino-head {
 	}
 }
 
+div.description_box {
+	margin-top: 150px;
+	p.description_text {
+		text-align: center;
+		font-size: 1.1rem;
+	}
+}
+
 
 
 ///////////////// F O O T E R /////////////////
@@ -170,7 +177,7 @@ div.dino-head {
 
 
 footer.bottom {
-	margin-top: 200px;
+	margin-top: 80px;
 	p {
 		font-size: 1.2rem;
 		text-align: center;
@@ -184,3 +191,5 @@ footer.bottom {
 		}
 	}
 }
+
+@import 'mq';

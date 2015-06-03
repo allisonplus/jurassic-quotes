@@ -1,0 +1,14 @@
+@media all and (max-width: 361px) {
+	header.top:after {
+		top: 175px;
+	}
+} // END 361px
+
+
+@media all and (max-width: 320px) {
+	footer.bottom {
+		p {
+			padding: 0 10px;
+		}
+	}
+} // END 320px
