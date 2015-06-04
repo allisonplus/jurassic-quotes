@@ -35,7 +35,7 @@ a {
 }
 
 .wrapper {
-	margin: 80px auto 0 auto;
+	margin: 100px auto 0 auto;
 }
 
 .inner-wrapper {
@@ -58,7 +58,7 @@ header.top {
 		width: 25px;
 		position: absolute;
 		z-index: 50;
-		top: 120px;
+		top: 100px;
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
@@ -71,13 +71,13 @@ h1.title {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	font-family: $font;
-	font-size: 4rem;
+	font-size: 3.2rem;
 	margin: 10px 0;
 }
 
 h2.subtitle {
-	margin-bottom: 0;
-	font-size: 2rem;
+	margin: 0;
+	font-size: 1.9rem;
 	text-align: center;
 }
 
@@ -127,16 +127,16 @@ span.quote {
 
 div.quote {
 	text-align: center;
-	font-size: 2.2rem;
+	font-size: 2.5rem;
 	line-height: 1.4;
-	margin: 0 auto 50px 0;
+	margin: 0 auto 40px auto;
 }
 
 
 
 div.dino-head {
 	position: relative;
-	margin: 20px auto 0 auto;
+	margin: 0 auto 0 auto;
 	width: 100px;
 	svg.dino-1, .dino-2, .dino-3 {
 		width: 100%;
