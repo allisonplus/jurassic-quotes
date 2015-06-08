@@ -112,10 +112,10 @@ window.onload=function(){
 
 // FADE IN/OUT ON CLICK, switching image source randomly from array
 
-$('a.hidden').mouseover(function() {
-	console.log('works');
-	$('svg.dino-egg').addClass('show-egg');
-});
+// $('a.hidden').mouseover(function() {
+// 	console.log('works');
+// 	$('svg.dino-egg').attr('fill', 'red');
+// });
 
 $('a.hidden').on('click', function() {
   $('#easter-egg').addClass('show').delay(1500).queue(function(next){

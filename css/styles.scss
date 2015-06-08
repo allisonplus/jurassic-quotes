@@ -119,11 +119,14 @@ a.hidden {
 		fill: transparent;
 		transition: all 0.2s ease-in;
 	}
+	&:hover svg.dino-egg {
+		fill:rgba(21, 21, 21, 1);
+	}
 }
 
-.show-egg {
-	fill: red;
-}
+// .show-egg {
+// 	fill: red;
+// }
 
 
 span.quote {
