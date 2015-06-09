@@ -6,8 +6,11 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 
+// VARIABLES 
+
 $font: 'Old Standard TT', serif;
 $text: rgba(21, 21, 21, 1);
+$body: rgba(237, 224, 206, 1);
 
 //////////////// D E F A U L T ////////////////
 //////////////////////////////////////////////
@@ -17,8 +20,7 @@ html {
 }
 
 body {
-	// overflow: hidden;
-	background: rgba(237, 224, 206, 1);
+	background-color: $body;
 	color: $text;
 	font-family: $font;
 }
@@ -42,9 +44,6 @@ a {
 	width: 80%;
 	margin: 0 auto;
 }
-
-///////////// N A V I G A T I O N /////////////
-//////////////////////////////////////////////
 
 ///////////////// H E A D E R /////////////////
 //////////////////////////////////////////////
@@ -110,24 +109,20 @@ h2.subtitle {
 a.hidden {
 	position: absolute;
 	font-size: 2rem;
-	right: 20px;
+	right: 25px;
 	top: 20px;
 	cursor: default;
 	z-index: 10;
 	svg.dino-egg {
-		width: 50px;
+		width: 25px;
 		fill: transparent;
-		transition: all 0.2s ease-in;
+		transition: all 0.2s ease-in-out;
 	}
 	&:hover svg.dino-egg {
-		fill:rgba(21, 21, 21, 1);
+		fill: $text;
+		cursor: pointer;
 	}
 }
-
-// .show-egg {
-// 	fill: red;
-// }
-
 
 span.quote {
 	font-size: 3rem;
@@ -140,8 +135,6 @@ div.quote {
 	line-height: 1.4;
 	margin: 0 auto 40px auto;
 }
-
-
 
 div.dino-head {
 	position: relative;
@@ -175,7 +168,7 @@ div.description_box {
 	margin-top: 150px;
 	p.description_text {
 		text-align: center;
-		font-size: 1.1rem;
+		font-size: 1.2rem;
 	}
 }
 

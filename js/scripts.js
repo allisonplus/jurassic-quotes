@@ -12,7 +12,7 @@ jpq.quotes = [
 	"Yahoo.",
 	"It's...it's a dinosaur",
 	"We're gonna make a fortune with this place.",
-	"Dr. Grant, my dear Dr. Sattler, welcome to Jurassic Park.",
+	"Dr. Grant, my dear Dr. Sattler, Welcome...to Jurassic Park.",
 	"You said you've got a T-rex?",
 	"Hello John!",
 	"Mr. DNA! Where did you come from?",
@@ -111,11 +111,6 @@ window.onload=function(){
 }
 
 // FADE IN/OUT ON CLICK, switching image source randomly from array
-
-// $('a.hidden').mouseover(function() {
-// 	console.log('works');
-// 	$('svg.dino-egg').attr('fill', 'red');
-// });
 
 $('a.hidden').on('click', function() {
   $('#easter-egg').addClass('show').delay(1500).queue(function(next){
