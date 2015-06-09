@@ -86,15 +86,15 @@ h2.subtitle {
 .easter-egg {
 	transform: translateY(-100%);
 	transition: all 0.4s cubic-bezier(.93,.05,1,.27); 
-	position: absolute;
-	width: 100%;
-	height: 100%;
+	position: fixed;
+	// width: 100%;
+	// height: 100%;
 	left: 0;
 	top: 0;
 	z-index: 9000;
 	img {
-		width: 100%;
-		height: 100%;
+		// width: 100%;
+		// height: 100%;
 	}
 }
 
@@ -108,10 +108,8 @@ h2.subtitle {
 
 a.hidden {
 	position: absolute;
-	font-size: 2rem;
 	right: 25px;
 	top: 20px;
-	cursor: default;
 	z-index: 10;
 	svg.dino-egg {
 		width: 25px;
@@ -120,7 +118,6 @@ a.hidden {
 	}
 	&:hover svg.dino-egg {
 		fill: $text;
-		cursor: pointer;
 	}
 }
 
@@ -139,11 +136,10 @@ div.quote {
 div.dino-head {
 	position: relative;
 	margin: 0 auto 0 auto;
-	width: 100px;
+	width: 90px;
 	svg.dino-1, .dino-2, .dino-3 {
 		width: 100%;
 		min-width: 75px;
-		// max-width: 100px;
 		position: absolute;
 		transition: all and 0.4s ease-in-out;
 		fill: $text;
@@ -242,6 +238,7 @@ footer.bottom {
 	p {
 		font-size: 1.2rem;
 		text-align: center;
+		margin: 0;
 		a {
 			color: $text;
 			font-style: italic;

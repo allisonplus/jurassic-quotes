@@ -2,7 +2,7 @@ var jpq = {};
 
 jpq.quotes = [
 	"Because Grant's like me; he's a digger.",
-	"That doesn't look very scary. More like a six-foot turkey.",
+	"That doesn't look very scary; more like a six-foot turkey.",
 	"What the hell do you think you're doing in here?",
 	"Ok, who's the jerk??",
 	"I don't care for lawyers, do you?",
@@ -18,7 +18,7 @@ jpq.quotes = [
 	"Mr. DNA! Where did you come from?",
 	"Bingo, Dino DNA!",
 	"But again, how do you know they're all female? Does somebody go out into the park, and pull up the dinosaurs' skirts?",
-	"Life uh, finds a way",
+	"Life uh...finds a way",
 	"You bred Raptors?",
 	"Yes, well, who's hungry?",
 	"We spared no expense.",
